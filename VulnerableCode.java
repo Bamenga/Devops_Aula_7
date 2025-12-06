@@ -41,7 +41,7 @@ public class VulnerableCode {
 
         try {
             // 2) CONEXÃO DIRETA COM CREDENCIAIS HARDCODED
-            conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/minha_aplicacao", "root", "senha_super_secreta");
 
             // 3) SQL INJECTION
             // Problema: username e password entram diretamente na query
